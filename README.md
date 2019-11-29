@@ -2,8 +2,13 @@
 Echoprint Codegen binaries
 
 ## How to build
+Boost headers only are located in folder `boost`. Please customize `BOOST_CFLAGS=-I../boost`.
+```
 cd echoprint-codegen/
+cd src/
 make
+make DESTDIR=../build install
+```
 
 There are two modes of operation of the Echoprint codegen:
 
